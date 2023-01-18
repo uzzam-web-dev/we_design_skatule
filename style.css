@@ -35,7 +35,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    ::-webkit-scrollbar{
+    ::-webkit-scrollbar {
         width: 9px;
     }
 }
@@ -69,6 +69,8 @@ body {
     width: 200px;
 }
 
+
+
 .navbar_links {
     display: flex;
     flex-direction: row;
@@ -78,7 +80,7 @@ body {
 .navbar_links a {
     padding: 0 20px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     color: #000000;
 }
