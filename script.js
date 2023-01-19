@@ -2,7 +2,6 @@
 
 //https://www.figma.com/file/tpoSV4numTo9RUdokG7CUM/resaizer_app_landing_page?node-id=0%3A1
 const mobileNavbar = document.getElementById("mobileNavbar");
-
 mobileNavbar.addEventListener("click", () => {
   const navbar_mobile = document.querySelector(".navbar_mobile");
   navbar_mobile.classList.toggle("active");
@@ -27,6 +26,21 @@ btns.forEach((btn, index) => {
       }
     });
   });
+});
+
+// Feature Agree Function
+const agreed = document.getElementById("agreed");
+const tick = document.getElementById("featureTick");
+tick.addEventListener("click", () => {
+  if (tick.checked == true) {
+    agreed.classList.add("agreeActive");
+    document.querySelector(".subscribe_inner-agree div i").style.visibility =
+      "visible";
+  } else {
+    agreed.classList.remove("agreeActive");
+    document.querySelector(".subscribe_inner-agree div i").style.visibility =
+      "hidden";
+  }
 });
 
 // Gallery Function
@@ -142,18 +156,3 @@ btns.forEach((btn, index) => {
 //     list5.classList.add('listDisplay');
 //     list6.classList.remove('listDisplay');
 // })
-
-// // Feature Agree Function
-//     const agreed = document.getElementById('agreed');
-//     const tick = document.getElementById('featureTick');
-//     tick.addEventListener('click', () => {
-//         if(tick.checked == true)
-//         {
-//             agreed.classList.add('agreeActive');
-//             document.querySelector('.subscribe_inner-agree div i').style.visibility = 'visible';
-//         }
-//         else{
-//             agreed.classList.remove('agreeActive');
-//             document.querySelector('.subscribe_inner-agree div i').style.visibility = 'hidden';
-//         }
-//     })
